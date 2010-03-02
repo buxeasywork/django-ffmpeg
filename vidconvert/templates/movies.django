@@ -1,0 +1,13 @@
+{% extends "root.django" %}
+
+{% block content %} 
+
+{% for k in movies %} 
+
+<img src="{{k.poster_frame_url}}" width="120"/>
+<a href="{{k.video_url}}">Download</a>
+<br/>
+
+{% endfor %} 
+
+{% endblock %} 

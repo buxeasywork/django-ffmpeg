@@ -7,5 +7,6 @@ urlpatterns = patterns('',
     (r'^convert_form/', 'vidconvert.views.convert_video_form'), 
     (r'^get/(?P<id>.*)$','vidconvert.views.get_video'),
     (r'^poster_frame/(?P<id>.*)$','vidconvert.views.poster_frame'),
-    (r'^status/(?P<id>.*)$','vidconvert.views.status')
+    (r'^status/(?P<id>.*)$','vidconvert.views.status'),
+    (r'^movies/$', 'vidconvert.views.movies')
     )
